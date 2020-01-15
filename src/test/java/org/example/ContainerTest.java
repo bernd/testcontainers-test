@@ -12,6 +12,6 @@ public class ContainerTest {
 
     @Test
     public void testContainers() {
-        assertThat(container.getContainerId()).isEqualTo("yolo");
+        assertThat(container.getContainerId().length()).isEqualTo(64);
     }
 }
